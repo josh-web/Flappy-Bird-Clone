@@ -1,7 +1,7 @@
 
 var bird;
 var pipes;
-var parallax = 0.8;
+var parallax = 1;
 var score = 0;
 var maxScore = 0;
 var birdSprite;
@@ -46,7 +46,7 @@ function draw() {
     }
   }
 
-  for (var i = pipes.length - 1; i >= 0; i--) {
+  for (var i = pipes.length - 2; i >= 2; i--) {
     pipes[i].update();
     pipes[i].show();
 
